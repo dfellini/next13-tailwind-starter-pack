@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  /* @apply bg-gray-100 text-gray-800; */
+  /* background: linear-gradient(
+    to right,
+    rgb(199, 210, 254),
+    rgb(254, 202, 202),
+    rgb(254, 249, 195)
+  ); */
+  /* @apply bg-gradient-to-r from-violet-800 to-fuchsia-600; */
+  @apply bg-gray-100 text-gray-800;
+}
+
+h1 {
+  font-weight: 900;
+  /* font-size: 4rem; */
+  line-height: 1.1;
+  @apply mb-2 text-3xl lg:text-6xl;
+}
+h2 {
+  font-weight: 700;
+  @apply mb-2 text-2xl lg:text-4xl;
+}
+
+h3 {
+  font-weight: 500;
+  @apply mb-2 text-2xl  lg:text-3xl;
+}
+
+h4 {
+  font-weight: 500;
+  @apply mb-2 text-xl  lg:text-2xl;
+}
+h5 {
+  font-weight: 500;
+  @apply mb-2 text-lg  lg:text-xl;
+}
+h6 {
+  font-weight: 500;
+  @apply mb-2 text-lg italic  lg:text-lg;
+}
+p {
+  @apply mb-2 text-gray-800;
+}
+
+pre {
+  @apply mb-2 overflow-x-auto whitespace-pre-wrap break-words;
+}
+
+ul {
+  @apply mb-2 ml-6 list-disc;
+}
+
+.hover {
+  @apply hover:text-gray-500
+      active:bg-white/50;
+}
+.hover-button {
+  @apply bg-slate-50/20
+      hover:text-gray-200
+      hover:shadow-lg
+      active:bg-white/50;
+}
+
+/* enables styling inputs with focus:border, focus:ring, etc */
+textarea:focus,
+select:focus,
+checkbox:focus,
+input:focus {
+  outline: none;
+}
