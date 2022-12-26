@@ -1,11 +1,16 @@
+import { Inter } from "@next/font/google";
 import Head from "next/head";
 import "../styles/globals.css";
 import Header from "components/Header";
 import Footer from "components/Footer";
 
+const inter = Inter({
+  subsets: ["latin"],
+});
+
 const Layout = ({ children }) => {
   return (
-    <html>
+    <html lang="en" className={`${inter.className}`}>
       <Head>
         <title>Site Title</title>
         <link rel="icon" href="/favicon.ico" />
